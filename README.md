@@ -1,0 +1,1 @@
+A modified version of the 'Atomic' theme that makes heavy use of the nord color palette and takes inspiration from AntonRyadovoy's 'nordcustom.omp.json' theme (https://github.com/AntonRyadovoy/pwsh_profile).
