@@ -60,16 +60,15 @@
           ],
           "leading_diamond": "\ue0b6",
           "template": "{{.Icon}} ",
-          "trailing_diamond": "\ue0b0"
-
+          "trailing_diamond": "\ue0b0"
         },
         {
-          "type": "text",
-          "style": "diamond",
+          "type": "session",
+          "style": "powerline",
           "background": "p:nord10",
           "foreground": "p:nord5",
-          "trailing_diamond": "\ue0b0",
-          "template": " {{.UserName}}@{{.HostName}} "
+          "powerline_symbol": "\ue0b0",
+          "template": " {{if .SSHSession}}\ueba9 {{end}}{{.UserName}}@{{.HostName}} "
         },
         {
           "type": "root",
@@ -133,13 +132,24 @@
           "trailing_diamond": "\ue0b4 "
         },
         {
+          "type": "python",
+          "style": "diamond",
           "background": "#306998",
           "foreground": "#FFE873",
           "leading_diamond": "\ue0b6",
-          "style": "diamond",
           "template": "\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}",
           "trailing_diamond": "\ue0b4 ",
-          "type": "python"
+          "properties": {
+            "home_enabled": true,
+            "display_mode": "files",
+            "extensions": [
+                "*.py",
+                "*.ipynb",
+                "pyproject.toml",
+                "venv.bak"
+            ]
+
+          }
         },
         {
           "background": "#88c0d0",
