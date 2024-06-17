@@ -64,6 +64,9 @@
           "leading_diamond": "\ue0b6",
           "template": "{{.Icon}} ",
           "trailing_diamond": "\ue0b0"
+          "properties": {
+            "redhat": "\uef5d"
+          }
         },
         {
           "type": "session",
