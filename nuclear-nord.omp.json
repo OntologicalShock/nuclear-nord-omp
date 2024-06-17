@@ -51,12 +51,14 @@
           "foreground_templates": [
             "{{if contains \"debian\" .OS}}p:debian{{end}}",
             "{{if contains \"macos\" .OS}}p:macos{{end}}",
-            "{{if contains \"arch\" .OS}}p:arch-blue{{end}}"
+            "{{if contains \"arch\" .OS}}p:arch-blue{{end}}",
+            "{{if contains \"redhat\" .OS}}#000000{{end}}"
           ],
           "background_templates": [
             "{{if contains \"alma\" .OS}}p:alma{{end}}",
             "{{if contains \"windows\" .OS}}p:windows{{end}}",
             "{{if contains \"ubuntu\" .OS}}p:ubuntu{{end}}",
+            "{{if contains \"redhat\" .OS}}#ee0000{{end}}",
             "{{if contains \"arch\" .OS}}p:arch-gray{{end}}"
           ],
           "leading_diamond": "\ue0b6",
