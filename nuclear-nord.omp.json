@@ -27,7 +27,8 @@
     "arch-blue": "#1793d1",
     "arch-gray": "#333333",
     "debian": "#D60A51",
-    "ubuntu": "#dd4814"
+    "ubuntu": "#dd4814",
+    "fedora": "#3c6eb4"
 
   },
   "blocks": [
@@ -47,7 +48,9 @@
           "style": "diamond",
           "foreground": "p:nord6",
           "background": "p:nord6",
-          "comment": "Do not parse, please.",
+          "properties": {
+            "redhat": "\uef5d"
+          },
           "foreground_templates": [
             "{{if contains \"debian\" .OS}}p:debian{{end}}",
             "{{if contains \"macos\" .OS}}p:macos{{end}}",
@@ -59,14 +62,12 @@
             "{{if contains \"windows\" .OS}}p:windows{{end}}",
             "{{if contains \"ubuntu\" .OS}}p:ubuntu{{end}}",
             "{{if contains \"redhat\" .OS}}#ee0000{{end}}",
-            "{{if contains \"arch\" .OS}}p:arch-gray{{end}}"
+            "{{if contains \"arch\" .OS}}p:arch-gray{{end}}",
+            "{{if contains \"fedora\" .OS}}p:fedora{{end}}"
           ],
           "leading_diamond": "\ue0b6",
           "template": "{{.Icon}} ",
-          "trailing_diamond": "\ue0b0",
-          "properties": {
-            "redhat": "\uef5d"
-          }
+          "trailing_diamond": "\ue0b0"
         },
         {
           "type": "session",
