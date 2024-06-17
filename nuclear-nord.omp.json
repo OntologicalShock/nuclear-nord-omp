@@ -49,7 +49,7 @@
           "foreground": "p:nord6",
           "background": "p:nord6",
           "properties": {
-            "redhat": "\uef5d"
+            "redhat": "󱄛"
           },
           "foreground_templates": [
             "{{if contains \"debian\" .OS}}p:debian{{end}}",
