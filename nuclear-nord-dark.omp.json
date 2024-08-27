@@ -2,6 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
     "console_title_template": "{{.UserName}}@{{.HostName}} [ {{.PWD}} ]",
     "final_space": false,
+    "auto_upgrade": true,
     "theme_name": "Nuclear Nord Bright",
     "theme_info": "A modified version of the 'Atomic' theme that makes heavy use of the nord color palette and takes inspiration from AntonRyadovoy's 'nordcustom.omp.json' theme (https://github.com/AntonRyadovoy/pwsh_profile).",
     "palette": {
