@@ -29,7 +29,8 @@
       "arch-gray": "#333333",
       "debian": "#D60A51",
       "ubuntu": "#dd4814",
-      "fedora": "#3c6eb4"
+      "fedora": "#3c6eb4",
+      "pop_os": "#45bacb"
   
     },
     "blocks": [
@@ -56,7 +57,9 @@
               "{{if contains \"macos\" .OS}}p:macos{{end}}",
               "{{if contains \"arch\" .OS}}p:arch-blue{{end}}",
               "{{if contains \"redhat\" .OS}}#ee00000{{end}}",
-              "{{if contains \"debian\" .OS}}p:debian{{end}}"
+              "{{if contains \"debian\" .OS}}p:debian{{end}}",
+              "{{if contains \"popos\" .OS}}p:pop_os{{end}}",
+              "{{if contains \"pop_os\" .OS}}p:pop_os{{end}}"
             ],
             "background_templates": [
               "{{if contains \"alma\" .OS}}p:alma{{end}}",
